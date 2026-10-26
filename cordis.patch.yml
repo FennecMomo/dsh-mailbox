@@ -1,0 +1,6 @@
+# FurtherAgent 留言箱：把 CLI 包成 DSH 原生工具
+#
+# 只是注册工具，不建定时器、不自动转发、不生成模型任务。
+- insert:
+    - id: mailbox
+      name: dsh-mailbox

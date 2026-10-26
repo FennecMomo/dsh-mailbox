@@ -1,0 +1,29 @@
+{
+  "name": "dsh-mailbox",
+  "version": "0.1.0",
+  "description": "把 FurtherAgent 的独立留言箱接成 DSH 原生工具：查未读、读留言、标已读、回信。只封装本机已有的 CLI，不建身份、不动中继、不自动转成会话消息，也不新增定时查收。",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "mailbox",
+    "furtheragent"
+  ],
+  "main": "lib/host.js",
+  "exports": {
+    ".": "./lib/host.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
